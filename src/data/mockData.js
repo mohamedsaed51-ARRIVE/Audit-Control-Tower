@@ -19,14 +19,48 @@ const rand = mulberry32(42);
 const pick = (arr) => arr[Math.floor(rand() * arr.length)];
 const int = (min, max) => Math.floor(min + rand() * (max - min + 1));
 
-export const currentUser = {
-  id: 'u-1024',
-  name: 'Mona El-Sayed',
-  role: 'Audit Manager',
-  email: 'mona.elsayed@arriveexpress.com',
-  avatarColor: '#12309C',
-  initials: 'ME',
-};
+export const users = [
+  {
+    id: 'u-1001',
+    name: 'Mona El-Sayed',
+    role: 'Audit Manager',
+    email: 'mona.elsayed@arriveexpress.com',
+    password: '123456',
+    avatarColor: '#12309C',
+    initials: 'ME',
+    status: 'active',
+  },
+  {
+    id: 'u-1002',
+    name: 'Ahmed Nabil',
+    role: 'Auditor',
+    email: 'ahmed.nabil@arriveexpress.com',
+    password: '123456',
+    avatarColor: '#1565C0',
+    initials: 'AN',
+    status: 'active',
+  },
+  {
+    id: 'u-1003',
+    name: 'Sara Kamal',
+    role: 'Auditor',
+    email: 'sara.kamal@arriveexpress.com',
+    password: '123456',
+    avatarColor: '#2E7D32',
+    initials: 'SK',
+    status: 'active',
+  },
+  {
+    id: 'u-1004',
+    name: 'Youssef Adel',
+    role: 'Branch Manager',
+    email: 'youssef.adel@arriveexpress.com',
+    password: '123456',
+    avatarColor: '#ED6C02',
+    initials: 'YA',
+    status: 'active',
+  },
+];
 
 export const branches = [
   'Cairo HQ',
