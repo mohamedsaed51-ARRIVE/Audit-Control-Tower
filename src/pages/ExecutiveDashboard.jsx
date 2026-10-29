@@ -322,7 +322,7 @@ export default function ExecutiveDashboard() {
 
   const caseStatusBreakdown = [
     {
-      name: 'Closed',
+      name: 'Closed Today',
       value: num(executive?.closedToday),
       color: STATUS_COLORS.Closed,
     },
@@ -1317,7 +1317,7 @@ export default function ExecutiveDashboard() {
                   <Area
                     type="monotone"
                     dataKey="closed"
-                    name="Closed"
+                    name="Closed Today"
                     stroke={
                       theme.palette.secondary.main
                     }
